@@ -1,0 +1,115 @@
+body{
+    background-color: #bbbbbc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: darkcyan;
+    text-align: center;
+    background-color: azure;
+}
+
+.top {
+    background-image: url("bannerpromo.jpg");
+    background-size: cover;
+    height: 500px;
+    background-repeat: no-repeat;   
+}
+
+.toptop{
+    color: darkcyan;
+    background-color: azure
+}
+
+h2 a{
+    font-size: 2rem;
+    color: darkcyan;
+
+}
+header {
+    display: flexbox;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+
+}
+nav li{
+    margin: 10px;
+    display: inline-block;
+    background-color: darkcyan; border-radius: 8cap; padding: 15px;
+    font-size: 1.3rem;
+
+}
+li a {
+    color: white;
+    transition: 0.3;
+}
+section {
+    display: flex;
+}
+
+article  {
+    flex: 1;   
+}
+
+footer {
+    display: flex;
+    font-weight: bolder;
+    background: url("banner\ footer.jpg") no-repeat center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+footer div {
+    flex: 1;
+    margin-top:600px;
+}
+
+.container {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    border: radius 60%;
+    
+}
+.container .content {
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+}
+
+li {
+    transition: 0.4s;
+    color: black;
+}
+
+
+
+h2 a:link { text-decoration: none; }
+h2 a:visited { text-decoration: none; }
+h2 a:hover { text-decoration: none; color: yellow; width: 300px;}
+h2 a:active { text-decoration: none; }
+li:hover { background-color:white;border-color: cadetblue;border-style: solid;}
+li a:hover {
+    color: black;
+}
+li a:link { text-decoration: none; }
+
+
+
+
+
