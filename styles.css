@@ -70,10 +70,13 @@ article  {
     flex-flow: row wrap;
     border-radius: 5px;
     background-color: white;
-    
+    transition: .3 ease;
 }
 .card:hover{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    -ms-transform: scale(1.08);
 }
 .card img{
     max-width: 100%;
@@ -108,11 +111,12 @@ footer {
     background-size: cover;
     height: 15rem;
     position: relative;
+    margin-top: 30vh;
 }
 
 footer div {
     flex: 1;
-    margin-top:600px;
+    margin-top:50vh;
 }
 
 .container {
