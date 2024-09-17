@@ -9,12 +9,20 @@
 <body>
     <header>
         <nav class="navbar">
+        <a href="index.html"><img src="images/Logo.png" alt="logo"class="logo"></a>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="index.html">Cardápio</a></li>
                 <li><a href="index.html">Reservas</a></li>
                 <li><a href="index.html">Sobre nós</a></li>
             </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -83,8 +91,14 @@
                 body.classList.remove("scroll-down")
                 body.classList.add("scroll-up")
             }
-
             lastScroll = currentScroll;
+        })
+        
+        const toggleButton = document.getElementByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('click',() => {
+            navbarLinks.classList.toggleButton('active')
         })
     </script>
 </body>
