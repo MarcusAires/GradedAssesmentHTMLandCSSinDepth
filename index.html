@@ -72,33 +72,5 @@
                 <p>Todos os direitos reservados Little Lemon</p>
             </div>
     </footer>
-    <script>
-        const body = document.body;
-        let lastScroll = 0;
-
-        window.addEventListener('scroll',()=>{
-            const currentScroll = window.pageYOffset
-
-            if (currentScroll <= 0){
-                body.classList.remove("scroll-up")
-            }
-            if(currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
-                body.classList.remove("scroll-up")
-                body.classList.add("scroll-down")
-            }
-            if(currentScroll < lastScroll && body.classList.contains("scroll-down")) {
-                body.classList.remove("scroll-down")
-                body.classList.add("scroll-up")
-            }
-            lastScroll = currentScroll;
-        })
-        
-        const toggleButton = document.getElementByClassName('toggle-button')[0]
-        const navbarLinks = document.getElementByClassName('navbar-links')[0]
-
-        toggleButton.addEventListener('click',() => {
-            navbarLinks.classList.toggleButton('active')
-        })
-    </script>
 </body>
 </html>
